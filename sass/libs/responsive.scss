@@ -1,0 +1,5 @@
+$medium: 768px;
+
+$medium-up: "only screen and (min-width: ${medium])"
+
+//écrire dans le code @media #{$medium-up}
