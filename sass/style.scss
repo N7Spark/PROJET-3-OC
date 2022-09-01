@@ -6,9 +6,20 @@
 // -------VARIABLE
 
 body {
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 footer {
-    background-color: rgb(95, 95, 95);
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+
+footer h3 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
 }
