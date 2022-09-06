@@ -1,0 +1,33 @@
+// MIXIN
+
+// // @mixin flex-center {
+// //     display: flex;
+// //     justify-content: center;
+// //     align-items: center;
+// // }
+
+// // @mixin flex-center ($type, $h, $v, $c) {
+// //     display: $type;
+// //     justify-content: $h;
+// //     align-items: $v;
+// //     flex-direction: $c;
+// // }
+
+// // mettre dans le code 
+
+// // @include flex-center(flex, center, center, inline)
+
+
+// EXTEND / PLACEHOLDER
+
+// %flex-center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .titre-h1 {
+//     @extend %flex-center;
+// }
+
+// TOUJOURS PRIVILEGIER LES MIXIN CAR PERMET UN SUIVI DU CODE PLUS EFFICACE

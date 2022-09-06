@@ -1,0 +1,303 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  border-radius: 25px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__titre {
+  margin: 15px;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+.header__localisation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23px 30px 23px 23px;
+  background-color: rgb(240, 240, 240);
+  position: relative;
+}
+.header__localisation:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  top: -10px;
+  left: 0px;
+  box-shadow: 5px 5px 5px rgb(190, 188, 188);
+}
+.header__localisation p {
+  padding-left: 20px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.presentation__full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f8f8f8;
+}
+.presentation__titre {
+  margin: 20px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.presentation p {
+  text-align: center;
+  margin: 20px;
+}
+.presentation a {
+  text-align: center;
+  margin: 30px 0;
+  padding: 30px 40px;
+  background: #000;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  background: rgb(181, 0, 196);
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.8631827731) 20%, rgb(255, 121, 218) 100%);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.fonction {
+  margin: 60px 30px;
+}
+.fonction__titre {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.fonction__all-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fonction__options {
+  position: relative;
+  width: 80%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 40px;
+  border-radius: 35px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.fonction__options span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -20px;
+  background: #9356DC;
+  color: #fff;
+  border-radius: 50%;
+}
+.fonction__options i {
+  padding-right: 60px;
+}
+
+.restaurants {
+  background: #f1f1f1;
+  padding: 80px 0;
+}
+.restaurants__titre {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-left: 30px;
+}
+.restaurants__cards {
+  margin: 15px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+.restaurants__cards a {
+  height: 100%;
+  border-radius: 25px;
+}
+
+.cards--img {
+  width: 100%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  margin: 0;
+}
+.cards--img img {
+  border-radius: 25px;
+}
+
+footer {
+  background-color: rgb(78, 78, 78);
+  color: white;
+}
+
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */
