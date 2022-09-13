@@ -1,0 +1,258 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    border-radius: 25px;
+}
+
+
+
+//---------HEADER
+
+
+
+.header-menu {
+    display: flex;
+    @include centrehv;
+    position: relative;
+
+    a {
+        position: absolute;
+        left: 50px;
+        color: black;
+        font-size: 30px;
+
+    }
+}
+
+.header-menu__titre {
+    margin: 15px;
+    letter-spacing: 1px;
+    font-size: $sizetitre;
+
+}
+
+
+
+
+//---------MENU
+
+
+.menu-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    img {
+        width: 100%;
+        height: 100%
+    }
+}
+
+.choix-menu {
+    @include flexcol;
+}
+
+.all-menus {
+    padding: 40px;
+    background-color: $colorgrey;
+    border-radius: 40px 40px 0 0;
+    margin-top: -40px;
+}
+
+.all-menus-titre {
+    margin-bottom: 90px;
+    position: relative;
+    font-size: $sizetitre;
+
+    i {
+        position: absolute;
+        right: 50px;
+        font-size: 40px;
+        color: $colorwhite;
+        text-shadow: 0 0 3px rgba($color: #000000, $alpha: 1.0);
+        cursor: pointer;
+        background: linear-gradient(to top,
+                rgba(255, 121, 218, 0.8631827731092436) 20%,
+                rgba(147, 86, 220, 1) 100%);
+        background-clip: text;
+        transition: all 1s ease-in-out;
+
+        &:hover {
+            background: linear-gradient(to top,
+                    rgba(255, 121, 218, 0.8631827731092436) 20%,
+                    rgba(147, 86, 220, 1) 100%);
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 3px rgba($color: #000000, $alpha: 0);
+        }
+    }
+}
+
+.menu-1 {
+    margin: 50px 0 90px 0;
+    @include flexcol;
+
+    h2 {
+        position: relative;
+        margin-bottom: 50px;
+        color: rgb(68, 68, 68);
+
+        &::after {
+            content: " ";
+            position: absolute;
+            width: 70px;
+            height: 6px;
+            top: 40px;
+            left: 0;
+            background-color: $colortert;
+        }
+    }
+}
+
+.menu-plats-one {
+    @include menus-plats;
+    @include animation-one;
+    &:hover {
+        @include menu-plats-hover
+    }
+}
+
+.menu-plats-two {
+    @include menus-plats;
+    @include animation-two;
+    &:hover {
+        @include menu-plats-hover;
+    }
+}
+
+.menu-plats-three {
+    @include menus-plats;
+    @include animation-three;
+    &:hover {
+        @include menu-plats-hover;
+    }
+}
+
+
+.menu-plats-txt {
+    width: 80%;
+    padding: 20px 0 20px 20px;
+    transition: all 0.5s ease-in-out;
+
+    h3 {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        font-size: 35px;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    p {
+        padding-bottom: 3px;
+        color: $colorp;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.menu-plats-prix {
+    transition: all 0.5s ease-in-out;
+    width: 20%;
+    padding: 20px 0;
+    position: relative;
+
+    span {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+        font-weight: bold;
+    }
+}
+
+.menu-plats-validation {
+    display: flex;
+    @include centrehv;
+    width: 0%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 0 20px 20px 0;
+    background-color: $colortert;
+
+    i {
+        display: none;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: $colorwhite;
+        color: $colortert;
+        rotate: 0deg;
+        transition: all 1s ease-in-out;
+    }
+}
+
+.commander {
+    @include flexcol;
+    @include centrehv;
+
+    a {
+        text-align: center;
+        margin-bottom: 90px;
+        padding: 30px 100px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: $colorwhite;
+        background: rgb(181, 0, 196);
+        background: linear-gradient(0deg, rgba(147, 86, 220, 0.8631827731092436) 20%, rgba(255, 121, 218, 1) 100%);
+        box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.3);
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            opacity: 0.8;
+            box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.5);
+        }
+    }
+}
+
+
+
+
+
+
+//---------FOOTER
+
+footer {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    @include flexcol;
+}
+
+footer h3 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.footer-txt {
+    @include flexcol;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+    font-size: $sizeparagraphe;
+}
+
+.footer-p1 i {
+    margin-right: 22px;
+}
+
+.footer-p2 i {
+    margin-right: 15px;
+    font-size: $sizeparagraphe;
+}

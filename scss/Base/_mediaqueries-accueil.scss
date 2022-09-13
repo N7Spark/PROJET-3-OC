@@ -1,0 +1,129 @@
+@media screen and (min-width: 768px) {
+
+
+    //-----------------HEADER    
+
+
+    .header__titre {
+        font-size: 60px;
+    }
+
+    .header__localisation {
+        font-size: 40px;
+    }
+
+
+    //-----------------FONCTION
+
+
+    .fonction__titre {
+        display: flex;
+        @include centrehv
+    }
+
+    .fonction__all-options {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    //-----------------RESTAURANTS
+
+    .restaurants__titre {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+    }
+
+    .restaurants__all-cards {
+        display: flex;
+        flex-wrap: wrap;
+        @include centrehv;
+    }
+
+    .restaurants__cards {
+        max-width: 450px;
+    }
+
+
+    .nouveau {
+        top: 30px;
+        right: 30px;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .cards--heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .cards-txt h3 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    
+    .p-cards {
+        font-size: 25px;
+    }
+    
+    .cards-coeur i {
+        bottom: 40px;
+        right: 30px;
+        font-size: 40px;
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width: 1192px){
+
+
+    //-----------------RESTAURANTS
+
+    .restaurants__cards {
+        max-width: 550px;
+        max-height: 550px;
+    }
+
+    .restaurants__cards a {
+        max-width: 550px;
+        max-height: 550px;
+    }
+
+    .nouveau {
+        top: 30px;
+        right: 30px;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .cards--heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .cards-txt h3 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    
+    .p-cards {
+        font-size: 25px;
+    }
+    
+    .cards-coeur i {
+        bottom: 40px;
+        right: 30px;
+        font-size: 40px;
+    }
+
+}

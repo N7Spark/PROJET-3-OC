@@ -1,0 +1,51 @@
+@media screen and (min-width:1192px) {
+    .groupe-menus {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .menu-1 {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .menu-plats-one, .menu-plats-two, .menu-plats-three, .menu-plats-four {
+        height: 200px;
+    }
+
+    .menu-plats-txt {
+        width: 50%;
+        @include flexcol;
+
+        h3 {
+            font-size: 30px;
+            white-space: inherit;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+
+        p {
+            font-size: 20px;
+            white-space: inherit;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .menu-plats-prix {
+        width: 50%;
+        margin-left: 10px;
+        span {
+            font-size: 30px;
+            bottom: 50px;
+        }
+    }
+    
+    .commander a {
+        padding: 30px 100px;
+        border-radius: 25px;
+        margin-top: 100px;
+    }
+}

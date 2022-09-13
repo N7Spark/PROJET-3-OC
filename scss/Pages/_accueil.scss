@@ -1,0 +1,302 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    border-radius: 25px;
+}
+
+//---------HEADER
+
+.header {
+    @include flexcol;
+    @include centrehv;
+}
+
+.header__titre {
+    margin: 15px;
+    letter-spacing: 1px;
+    font-size: $sizetitre;
+
+}
+
+.header__localisation {
+    width: 100%;
+    display: flex;
+    @include centrehv;
+    padding: 23px 30px 23px 23px;
+    background-color: $colorgrey;
+    position: relative;
+
+    &:after {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        top: -10px;
+        left: 0px;
+        box-shadow: 5px 5px 5px rgb(190, 188, 188);
+    }
+
+    p {
+        padding-left: 20px;
+        margin: 0;
+        font-weight: bold;
+        font-size: $sizeparagraphe;
+    }
+}
+
+
+
+//---------PRESENTATION
+
+.presentation__full {
+    @include flexcol;
+    @include centrehv;
+    margin: 50px;
+}
+
+.presentation {
+    @include flexcol;
+    @include centrehv;
+    background: #f8f8f8;
+
+    &__titre {
+        margin: 20px;
+        font-size: $sizetitre;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    p {
+        text-align: center;
+        margin: 20px;
+        color: $colorp;
+    }
+
+    a {
+        text-align: center;
+        margin: 30px 0;
+        padding: 30px 40px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: $colorwhite;
+        background: linear-gradient(0deg, rgba(147, 86, 220, 0.8631827731092436) 20%, rgba(255, 121, 218, 1) 100%);
+        box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.3);
+        // transition: all 2s ease-in-out;
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+       
+
+        &:hover {
+            // background: linear-gradient(0deg, rgba(147, 86, 220, 0.631827731092436, ) 20%, rgba(255, 121, 218, 0.8) 100%, );
+            opacity: 0.8;
+            box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.5);
+        }
+    }
+}
+
+
+
+//---------FONCTIONNEMENT
+
+
+.fonction {
+    margin: 60px 30px;
+
+    &__titre {
+        font-weight: bold;
+        font-size: $sizetitre;
+        margin-bottom: 20px;
+    }
+
+    &__all-options {
+        @include flexcol;
+        @include centrehv;
+    }
+
+    &__options {
+        position: relative;
+        width: 80%;
+        margin: 30px 0;
+        display: flex;
+        @include centrehv;
+        background-color: $colorgrey;
+        text-decoration: none;
+        color: #000;
+        padding: 40px;
+        border-radius: 35px;
+        box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.2);
+        transition: all 0.2s ease-in-out;
+
+        span {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            @include centrehv;
+            left: -20px;
+            background: $colorprim;
+            color: $colorwhite;
+            border-radius: 50%;
+        }
+
+        i {
+            padding-right: 60px;
+            transition: all 0.2 ease-in-out;
+        }
+
+        &:hover {
+            background-color: rgba(147, 86, 220, 0.1);
+            box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.5);
+
+            i {
+                color: $colorprim;
+            }
+        }
+    }
+}
+
+
+
+//---------RESTAURANTS
+
+
+
+.restaurants {
+    background: $colorgrey;
+    padding: 80px 0;
+
+    &__titre {
+        font-size: $sizetitre;
+        font-weight: bold;
+        margin-bottom: 40px;
+        margin-left: 30px;
+    }
+
+    &__cards {
+        margin: 40px 25px;
+        border-radius: 25px;
+        @include flexcol;
+        background: $colorwhite;
+        box-shadow: -2px 10px 10px rgba($color: #000000, $alpha: 0.1);
+
+        a {
+            position: relative;
+            height: 100%;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
+.cards--img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    margin: 0;
+
+    & img {
+        width: 100%;
+        max-height: 400px;
+        max-width: 790px;
+        border-radius: 25px 25px 0 0;
+    }
+}
+
+.nouveau {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    padding: 10px 20px;
+    display: flex;
+    @include centrehv;
+    background-color: $colortert;
+    color: #096850;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cards--heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.cards-txt {
+    position: relative;
+    @include flexcol;
+
+    h3 {
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+}
+
+.p-cards {
+    color: $colorp;
+}
+
+.cards-coeur i {
+    position: absolute;
+    bottom: 70px;
+    right: 70px;
+    font-size: 50px;
+    color: $colorwhite;
+    text-shadow: 0 0 3px rgba($color: #000000, $alpha: 1.0);
+}
+
+.cards-coeur i:hover {
+    background-image: linear-gradient(to top,
+            rgba(255, 121, 218, 0.8631827731092436) 20%,
+            rgba(147, 86, 220, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+
+
+//---------FOOTER
+
+footer {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    @include flexcol;
+}
+
+footer h3 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.footer-txt {
+    @include flexcol;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+    font-size: $sizeparagraphe;
+}
+
+.footer-p1 i {
+    margin-right: 22px;
+}
+
+.footer-p2 i {
+    margin-right: 15px;
+    font-size: $sizeparagraphe;
+}
+
+
+
+// div validation, pourquoi le logo disparaitre directement quand on enlève le hover?.
+// Je n'arrive pas à remettre le texte qui va à la ligne, sans faire de pointillés.
