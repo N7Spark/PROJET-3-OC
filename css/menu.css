@@ -156,7 +156,7 @@ body {
 .header-menu__titre {
   margin: 15px;
   letter-spacing: 1px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .menu-img {
@@ -185,7 +185,7 @@ body {
 .all-menus-titre {
   margin-bottom: 90px;
   position: relative;
-  font-size: 40px;
+  font-size: 30px;
 }
 .all-menus-titre i {
   position: absolute;

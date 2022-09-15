@@ -136,7 +136,6 @@ h1 {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 30px;
   border-radius: 25px;
 }
 
@@ -150,7 +149,7 @@ body {
 .header__titre {
   margin: 15px;
   letter-spacing: 1px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .header__localisation {
@@ -195,7 +194,7 @@ body {
 }
 .presentation__titre {
   margin: 20px;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
 }
@@ -226,7 +225,7 @@ body {
 }
 .fonction__titre {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 .fonction__all-options {
@@ -237,33 +236,35 @@ body {
 }
 .fonction__options {
   position: relative;
-  width: 80%;
-  margin: 30px 0;
+  width: 70%;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f1f1f1;
   text-decoration: none;
   color: #000;
-  padding: 40px;
-  border-radius: 35px;
+  font-weight: bold;
+  padding: 30px;
+  border-radius: 25px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 }
 .fonction__options span {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  left: -20px;
+  left: -15px;
   background: #9356DC;
   color: white;
   border-radius: 50%;
 }
 .fonction__options i {
-  padding-right: 60px;
+  padding-right: 50px;
+  font-size: 20px;
   transition: all 0.2 ease-in-out;
 }
 .fonction__options:hover {
@@ -279,7 +280,7 @@ body {
   padding: 80px 0;
 }
 .restaurants__titre {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 40px;
   margin-left: 30px;
@@ -337,7 +338,6 @@ body {
 }
 
 .cards-txt {
-  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -351,10 +351,7 @@ body {
 }
 
 .cards-coeur i {
-  position: absolute;
-  bottom: 70px;
-  right: 70px;
-  font-size: 50px;
+  font-size: 25px;
   color: white;
   text-shadow: 0 0 3px black;
 }
