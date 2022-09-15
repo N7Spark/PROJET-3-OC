@@ -19,34 +19,33 @@
 
 @mixin menu_plats-hover {
     .menu-plats-txt {
-        width: 50%;
+        
     }
 
     .menu-plats-prix {
-        width: 30%;
+        
     }
 
     .menu-plats-validation {
-        width: 20%;
+        width: 70px;
         i {
-            display: block;
-        }
+           animation: rotation 0.3s ease-in-out 0.1s 1;
     }
 }
-
+}
 
 @mixin animation_one {
-    animation: ouverture-plats-one 0.5s ease-in-out 0s 1;
+    animation: ouverture-plats-one 2.2s ease-in-out 1s 1;
 }
 
 @mixin animation_two {
-    animation: ouverture-plats-two 0.7s ease-in-out 0s 1;
+    animation: ouverture-plats-two 2.6s ease-in-out 1s 1;
 }
 
 @mixin animation_three {
-    animation: ouverture-plats-three 0.9s ease-in-out 0s 1;
+    animation: ouverture-plats-three 3s ease-in-out 1s 1;
 }
 
 @mixin animation_four {
-    animation: ouverture-plats-three 1.1s ease-in-out 0s 1;
+    animation: ouverture-plats-four 3.4s ease-in-out 1s 1;
 }

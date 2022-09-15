@@ -149,7 +149,7 @@ body {
 .header__titre {
   margin: 15px;
   letter-spacing: 1px;
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .header__localisation {
@@ -174,7 +174,7 @@ body {
   padding-left: 20px;
   margin: 0;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .presentation__full {
@@ -194,7 +194,7 @@ body {
 }
 .presentation__titre {
   margin: 20px;
-  font-size: 30px;
+  font-size: 27px;
   text-align: center;
   font-weight: bold;
 }
@@ -225,7 +225,7 @@ body {
 }
 .fonction__titre {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 27px;
   margin-bottom: 20px;
 }
 .fonction__all-options {
@@ -264,6 +264,7 @@ body {
 }
 .fonction__options i {
   padding-right: 50px;
+  padding-left: 15px;
   font-size: 20px;
   transition: all 0.2 ease-in-out;
 }
@@ -280,7 +281,7 @@ body {
   padding: 80px 0;
 }
 .restaurants__titre {
-  font-size: 30px;
+  font-size: 27px;
   font-weight: bold;
   margin-bottom: 40px;
   margin-left: 30px;
@@ -350,10 +351,24 @@ body {
   color: rgb(114, 114, 114);
 }
 
+.cards-coeur {
+  position: relative;
+}
+
 .cards-coeur i {
+  position: absolute;
+  top: -10px;
+  right: -10px;
   font-size: 25px;
-  color: white;
-  text-shadow: 0 0 3px black;
+}
+
+.fa-solid {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8631827731) 20%, rgb(255, 255, 255) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease-in;
+  opacity: 0;
 }
 
 .cards-coeur i:hover {
@@ -361,7 +376,7 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  text-shadow: none;
+  opacity: 1;
 }
 
 footer {
@@ -389,7 +404,7 @@ footer a {
   text-decoration: none;
   color: white;
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .footer-p1 i {
@@ -398,7 +413,7 @@ footer a {
 
 .footer-p2 i {
   margin-right: 15px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 768px) {

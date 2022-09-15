@@ -142,6 +142,7 @@ body {
 
         i {
             padding-right: 50px;
+            padding-left: 15px;
             font-size: 20px;
             transition: all 0.2 ease-in-out;
         }
@@ -239,11 +240,26 @@ body {
     color: $colorp;
 }
 
-.cards-coeur i {
-    font-size: 25px;
-    color: $colorwhite;
-    text-shadow: 0 0 3px rgba($color: #000000, $alpha: 1.0);
+.cards-coeur {
+    position: relative;
 }
+
+.cards-coeur i {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 25px;
+}
+
+.fa-solid {
+    background-image: linear-gradient(to top,
+            rgba(255, 255, 255, 0.8631827731092436) 20%,
+            rgba(255, 255, 255, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+} 
 
 .cards-coeur i:hover {
     background-image: linear-gradient(to top,
@@ -251,7 +267,7 @@ body {
             rgba(147, 86, 220, 1) 100%);
     background-clip: text;
     color: transparent;
-    text-shadow: none;
+    opacity: 1;
 }
 
 
@@ -296,10 +312,6 @@ footer a {
 
 
 
-// div validation, pourquoi le logo disparaitre directement quand on enlève le hover?. => changer le display block en overflow hidden
-// menu-plat-one:hover menu-plats-validation i  mettre animation
-// reduire les tailles de police titre, paragraphe et body
-// mettre le mail
-//faire le loader spinner
+
 //slidego pour la présentation
-// animation coeur: prendre deux icones, les superposer et mettre un hover sur le heigth
+// mailto ne fonctionne pas sur CHROME

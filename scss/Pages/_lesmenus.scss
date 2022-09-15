@@ -1,8 +1,53 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
     border-radius: 25px;
 }
+
+
+//---------LOADER
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+    background: $colortert;
+    opacity: 0;
+    @include flexcol;
+    @include centrehv;
+    animation: disparition 2s ease-in-out 0s 1;
+}
+
+.ring {
+    position: absolute;
+    z-index: -500;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: index 2s ease 0s 1 ;
+}
+
+.ring-txt {
+    width: 280px;
+    height: 280px;
+    margin: auto;
+    display: flex;
+    @include centrehv;
+    color: white;
+    font-family: "Shrikhand", cursive;
+    line-height: 1.5;
+    font-size: 25px;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: rotation-loading 2s ease-in-out 0s 1;
+
+}
+
+
+
+
 
 
 
@@ -60,32 +105,43 @@ body {
 }
 
 .all-menus-titre {
-    margin-bottom: 90px;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
     font-size: $sizetitre;
 
-    i {
-        position: absolute;
-        right: 50px;
-        font-size: 40px;
-        color: $colorwhite;
-        text-shadow: 0 0 3px rgba($color: #000000, $alpha: 1.0);
-        cursor: pointer;
-        background: linear-gradient(to top,
-                rgba(255, 121, 218, 0.8631827731092436) 20%,
-                rgba(147, 86, 220, 1) 100%);
-        background-clip: text;
-        transition: all 1s ease-in-out;
+    &-heart {
+        position: relative;
 
-        &:hover {
-            background: linear-gradient(to top,
-                    rgba(255, 121, 218, 0.8631827731092436) 20%,
-                    rgba(147, 86, 220, 1) 100%);
-            background-clip: text;
-            color: transparent;
-            text-shadow: 0 0 3px rgba($color: #000000, $alpha: 0);
+        i {
+            position: absolute;
+
+            &:hover {
+                background-image: linear-gradient(to top,
+                        rgba(255, 121, 218, 0.8631827731092436) 20%,
+                        rgba(147, 86, 220, 1) 100%);
+                background-clip: text;
+                color: transparent;
+                opacity: 1;
+            }
         }
     }
+
+    .fa-solid {
+        background-image: linear-gradient(to top,
+                rgba(255, 255, 255, 0.8631827731092436) 20%,
+                rgba(255, 255, 255, 1) 100%);
+        background-clip: text;
+        color: transparent;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+}
+
+
+
+.groupe-menus {
+    min-width: 200px;
 }
 
 .menu-1 {
@@ -94,6 +150,7 @@ body {
 
     h2 {
         position: relative;
+        font-size: 20px;
         margin-bottom: 50px;
         color: rgb(68, 68, 68);
 
@@ -102,7 +159,7 @@ body {
             position: absolute;
             width: 70px;
             height: 6px;
-            top: 40px;
+            top: 30px;
             left: 0;
             background-color: $colortert;
         }
@@ -112,6 +169,7 @@ body {
 .menu-plats-one {
     @include menus-plats;
     @include animation-one;
+
     &:hover {
         @include menu-plats-hover
     }
@@ -120,6 +178,7 @@ body {
 .menu-plats-two {
     @include menus-plats;
     @include animation-two;
+
     &:hover {
         @include menu-plats-hover;
     }
@@ -128,6 +187,7 @@ body {
 .menu-plats-three {
     @include menus-plats;
     @include animation-three;
+
     &:hover {
         @include menu-plats-hover;
     }
@@ -135,14 +195,15 @@ body {
 
 
 .menu-plats-txt {
-    width: 80%;
+    min-width: 100px;
+    flex: 1;
     padding: 20px 0 20px 20px;
     transition: all 0.5s ease-in-out;
 
     h3 {
         padding-bottom: 5px;
         margin-bottom: 10px;
-        font-size: 35px;
+        font-size: 20px;
         font-weight: bold;
         white-space: nowrap;
         overflow: hidden;
@@ -160,14 +221,13 @@ body {
 
 .menu-plats-prix {
     transition: all 0.5s ease-in-out;
-    width: 20%;
-    padding: 20px 0;
-    position: relative;
+    min-width: 50px;
+    display: flex;
+    @include centrehv;
+    margin: 0 10px;
 
     span {
-        position: absolute;
-        bottom: 20px;
-        right: 30px;
+        font-size: 20px;
         font-weight: bold;
     }
 }
@@ -179,16 +239,19 @@ body {
     transition: all 0.5s ease-in-out;
     border-radius: 0 20px 20px 0;
     background-color: $colortert;
+    overflow: hidden;
 
     i {
-        display: none;
         padding: 10px;
         border-radius: 50%;
         background-color: $colorwhite;
         color: $colortert;
-        rotate: 0deg;
         transition: all 1s ease-in-out;
     }
+}
+
+.fa-check {
+    font-size: 25px
 }
 
 .commander {
@@ -198,7 +261,7 @@ body {
     a {
         text-align: center;
         margin-bottom: 90px;
-        padding: 30px 100px;
+        padding: 25px 100px;
         border-radius: 50px;
         text-decoration: none;
         color: $colorwhite;
