@@ -303,8 +303,6 @@ body {
 }
 
 .cards--img {
-  width: 100%;
-  height: 70%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px 25px 0 0;
@@ -362,7 +360,7 @@ body {
   font-size: 25px;
 }
 
-.fa-solid {
+.icone-coeur {
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8631827731) 20%, rgb(255, 255, 255) 100%);
   -webkit-background-clip: text;
           background-clip: text;
@@ -371,7 +369,7 @@ body {
   opacity: 0;
 }
 
-.cards-coeur i:hover {
+.icone-coeur:hover {
   background-image: linear-gradient(to top, rgba(255, 121, 218, 0.8631827731) 20%, rgb(147, 86, 220) 100%);
   -webkit-background-clip: text;
           background-clip: text;
@@ -418,10 +416,10 @@ footer a {
 
 @media screen and (min-width: 768px) {
   .header__titre {
-    font-size: 60px;
+    font-size: 40px;
   }
   .header__localisation {
-    font-size: 40px;
+    font-size: 20px;
   }
   .fonction__titre {
     display: flex;
@@ -432,12 +430,13 @@ footer a {
     width: 80%;
     margin: 0 auto;
   }
-}
-@media screen and (min-width: 768px) {
+  .restaurants {
+    padding: 40px 0;
+  }
   .restaurants__titre {
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    margin: 0;
   }
   .restaurants__all-cards {
     display: flex;
@@ -446,13 +445,19 @@ footer a {
     align-items: center;
   }
   .restaurants__cards {
-    max-width: 450px;
+    width: 40%;
+    height: 100%;
+  }
+  .cards--img {
+    height: 100%;
+  }
+  .cards--img img {
+    height: 100%;
   }
   .nouveau {
     top: 30px;
     right: 30px;
     padding: 10px 20px;
-    font-size: 20px;
   }
   .cards--heading {
     display: flex;
@@ -464,29 +469,58 @@ footer a {
     margin-bottom: 10px;
     font-weight: bold;
   }
-  .p-cards {
+  .cards-coeur i {
+    top: -17px;
+    right: 10px;
     font-size: 25px;
   }
-  .cards-coeur i {
-    bottom: 40px;
-    right: 30px;
-    font-size: 40px;
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer h3 {
+    padding: 10px;
+  }
+  .footer-txt {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1192px) {
-  .restaurants__cards {
-    max-width: 550px;
-    max-height: 550px;
+  .fonction__titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .restaurants__cards a {
-    max-width: 550px;
-    max-height: 550px;
+  .fonction__all-options {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .fonction__options {
+    width: 20%;
+    margin: 20px 30px 0 30px;
+  }
+  .restaurants {
+    padding: 40px 0;
+  }
+  .restaurants__all-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+  }
+  .restaurants__cards {
+    width: 40%;
+    height: 100%;
+    margin: 0 10px;
   }
   .nouveau {
     top: 30px;
     right: 30px;
-    padding: 10px 20px;
-    font-size: 20px;
+    padding: 5px 10px;
   }
   .cards--heading {
     display: flex;
@@ -498,12 +532,14 @@ footer a {
     margin-bottom: 10px;
     font-weight: bold;
   }
-  .p-cards {
-    font-size: 25px;
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .cards-coeur i {
-    bottom: 40px;
-    right: 30px;
-    font-size: 40px;
+  .footer-txt {
+    justify-content: center;
+    align-items: center;
   }
 }

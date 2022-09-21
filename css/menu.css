@@ -232,6 +232,7 @@ body {
   font-size: 27px;
 }
 .all-menus-titre-heart {
+  width: 30px;
   position: relative;
 }
 .all-menus-titre-heart i {
@@ -244,7 +245,7 @@ body {
   color: transparent;
   opacity: 1;
 }
-.all-menus-titre .fa-solid {
+.all-menus-titre .icone-coeur {
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8631827731) 20%, rgb(255, 255, 255) 100%);
   -webkit-background-clip: text;
           background-clip: text;
@@ -256,19 +257,13 @@ body {
 .groupe-menus {
   min-width: 200px;
 }
-
-.menu-1 {
-  margin: 50px 0 90px 0;
-  display: flex;
-  flex-direction: column;
-}
-.menu-1 h2 {
+.groupe-menus h2 {
   position: relative;
   font-size: 20px;
   margin-bottom: 50px;
   color: rgb(68, 68, 68);
 }
-.menu-1 h2::after {
+.groupe-menus h2::after {
   content: " ";
   position: absolute;
   width: 70px;
@@ -276,6 +271,12 @@ body {
   top: 30px;
   left: 0;
   background-color: #99E2D0;
+}
+
+.menu-1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .menu-plats-one {
@@ -332,6 +333,24 @@ body {
           animation: rotation 0.3s ease-in-out 0.1s 1;
 }
 
+.menu-plats-four {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  -webkit-animation: ouverture-plats-three 3s ease-in-out 1s 1;
+          animation: ouverture-plats-three 3s ease-in-out 1s 1;
+}
+.menu-plats-four:hover .menu-plats-validation {
+  width: 70px;
+}
+.menu-plats-four:hover .menu-plats-validation i {
+  -webkit-animation: rotation 0.3s ease-in-out 0.1s 1;
+          animation: rotation 0.3s ease-in-out 0.1s 1;
+}
+
 .menu-plats-txt {
   min-width: 100px;
   flex: 1;
@@ -379,7 +398,7 @@ body {
   overflow: hidden;
 }
 .menu-plats-validation i {
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
   background-color: white;
   color: #99E2D0;
@@ -585,21 +604,21 @@ footer a {
     opacity: 1;
     transform: rotate(0deg);
   }
-  30% {
+  20% {
     opacity: 1;
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   50% {
     opacity: 1;
-    transform: rotate(360deg);
+    transform: rotate(720deg);
   }
   75% {
     opacity: 1;
-    transform: rotate(360deg);
+    transform: rotate(720deg);
   }
   100% {
     opacity: 0;
-    transform: rotate(360deg);
+    transform: rotate(720deg);
   }
 }
 @keyframes rotation-loading {
@@ -607,21 +626,21 @@ footer a {
     opacity: 1;
     transform: rotate(0deg);
   }
-  30% {
+  20% {
     opacity: 1;
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   50% {
     opacity: 1;
-    transform: rotate(360deg);
+    transform: rotate(720deg);
   }
   75% {
     opacity: 1;
-    transform: rotate(360deg);
+    transform: rotate(720deg);
   }
   100% {
     opacity: 0;
-    transform: rotate(360deg);
+    transform: rotate(720deg);
   }
 }
 @-webkit-keyframes disparition {
@@ -677,41 +696,33 @@ footer a {
   }
 }
 @media screen and (min-width: 1192px) {
+  .menu-img {
+    max-height: 600px;
+  }
   .groupe-menus {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .menu-1 {
-    width: 45%;
-    margin-bottom: 20px;
-  }
-  .menu-plats-one, .menu-plats-two, .menu-plats-three, .menu-plats-four {
-    height: 200px;
-  }
-  .menu-plats-txt {
-    width: 50%;
     display: flex;
     flex-direction: column;
   }
-  .menu-plats-txt h3 {
-    font-size: 30px;
-    white-space: inherit;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  .menu-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
   }
-  .menu-plats-txt p {
-    font-size: 20px;
-    white-space: inherit;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  .menu-plats-one, .menu-plats-two, .menu-plats-three, .menu-plats-four {
+    margin: 0 10px;
+    width: 30%;
+  }
+  .menu-plats-txt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
   .menu-plats-prix {
-    width: 50%;
+    width: 50px;
     margin-left: 10px;
   }
   .menu-plats-prix span {
-    font-size: 30px;
     bottom: 50px;
   }
   .commander a {

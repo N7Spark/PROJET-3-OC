@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La note enchantée</title>
-    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
@@ -17,11 +17,22 @@
 
 <body>
 
+    <!-- LOADER -->
+
+    <div class="loader"></div>
+    <div class="ring">
+        <div class="ring-txt">C'est l'heure<br>de manger !</div>
+    </div>
+    
+
+
+
+
 
     <!-- HEADER -->
 
     <header class="header-menu">
-        <a href="/index.html" class="fleche-retour">
+        <a href="../index.html" class="fleche-retour">
             <i class="fa-solid fa-arrow-left"></i>
         </a>
         <h1 class="header-menu__titre">ohmyfood</h1>
@@ -37,136 +48,156 @@
 
     <section class="choix-menu">
         <div class="menu-img">
-            <img src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash (2).jpg" alt="">
+            <img src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash (5).jpg" alt="">
         </div>
         <div class="all-menus">
-            <h1 class="all-menus-titre">La palette du goût <i class="fa-solid fa-heart"></i></h1>
-            <div class="menu-1">
+            <h1 class="all-menus-titre">
+                <p>La note enchantée</p>
+                <div class="all-menus-titre-heart">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart icone-coeur"></i>
+                </div>
+            </h1>
+            <div class="groupe-menus">
                 <h2>ENTRÉE</h2>
-                <div class="menu-plats">
-                    <div class="menu-plats-txt">
-                        <h3>Fricassée d'escargot</h3>
-                        <p>Au piment d'espelette</p>
+                <div class="menu-1">                   
+                    <div class="menu-plats-one">
+                        <div class="menu-plats-txt">
+                            <h3>Ravioles de foie gras</h3>
+                            <p>accompagnés de leur crèmes à la truffe</p>
+                        </div>
+                        <div class="menu-plats-prix"><span>25€</span></div>
+                        <div class="menu-plats-validation">
+                            <div class="logo-validation">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="menu-plats-prix"><span>25€</span></div>
-                    <div class="menu-plats-validation">
-                        <div class="logo-validation">
-                            <i class="fa-solid fa-check"></i>
+                    <div class="menu-plats-two">
+                        <div class="menu-plats-txt">
+                            <h3>Caviar osciètre</h3>
+                            <p>Sur blini à la farine de blé noir</p>
+                        </div>
+                        <div class="menu-plats-prix"><span>35€</span></div>
+                        <div class="menu-plats-validation">
+                            <div class="logo-validation">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-plats-three">
+                        <div class="menu-plats-txt">
+                            <h3>Homard et espuma de France</h3>
+                            <p>Mariné aux zests d'orange</p>
+                        </div>
+                        <div class="menu-plats-prix"><span>20€</span></div>
+                        <div class="menu-plats-validation">
+                            <div class="logo-validation">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-plats-four">
+                        <div class="menu-plats-txt">
+                            <h3>Foie gras de canard cuit entier</h3>
+                            <p>Confiture de figue et pain toasté</p>
+                        </div>
+                        <div class="menu-plats-prix"><span>35€</span></div>
+                        <div class="menu-plats-validation">
+                            <div class="logo-validation">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="menu-plats">
-                    <div class="menu-plats-txt">
-                        <h3>Foie gras de canard mi-cuit</h3>
-                        <p>Et ses copeaux de truffe noire</p>   
-                    </div>
-                    <div class="menu-plats-prix"><span>35€</span></div> 
-                    <div class="menu-plats-validation">
-                        <div class="logo-validation">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-plats">
-                    <div class="menu-plats-txt">
-                        <h3>Oeuf au plat</h3>
-                        <p>Assaisoné à la truffe sur lit de légumes</p>
-                    </div>
-                    <div class="menu-plats-prix"><span>20€</span></div>
-                    <div class="menu-plats-validation">
-                        <div class="logo-validation">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-
-            <div class="menu-1">
                 <h2>PLATS</h2>
-                <div class="menu-plats">
-                    <div class="menu-plats-txt">
-                        <h3>Filet de boeuf aux herbes</h3>
-                        <p>Accompagnées de sa ribambelle de légume</p>
+                <div class="menu-1">
+                    <div class="menu-plats-one">
+                        <div class="menu-plats-txt">
+                            <h3>Noix de coquilles Saint-Jacques</h3>
+                            <p>Sur lit de purée de céleri-rave</p>
+                        </div>
+                        <div class="menu-plats-prix"><span>40€</span></div>
+                        <div class="menu-plats-validation">
+                            <div class="logo-validation">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="menu-plats-prix"><span>40€</span></div>
-                    <div class="menu-plats-validation">
-                        <div class="logo-validation">
-                            <i class="fa-solid fa-check"></i>
+                    <div class="menu-plats-two">
+                        <div class="menu-plats-txt">
+                            <h3>Langoustine poêlée</h3>
+                            <p>Purée de patate douce</p>
+                        </div>
+                        <div class="menu-plats-prix"><span>35€</span></div>
+                        <div class="menu-plats-validation">
+                            <div class="logo-validation">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-plats-three">
+                        <div class="menu-plats-txt">
+                            <h3>Mijoté de queue de boeuf</h3>
+                            <p>Et riz sauvage aux zest de citron</p>
+                        </div>
+                        <div class="menu-plats-prix"><span>44€</span></div>
+                        <div class="menu-plats-validation">
+                            <div class="logo-validation">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="menu-plats">
-                    <div class="menu-plats-txt">
-                        <h3>Parmentier de queue de boeuf</h3>
-                        <p>À la truffe noir sur sa purée de panais</p>
-                    </div>
-                    <div class="menu-plats-prix"><span>35€</span></div>
-                    <div class="menu-plats-validation">
-                        <div class="logo-validation">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-plats">
-                    <div class="menu-plats-txt">
-                        <h3>Filet de Turbot</h3>
-                        <p>Aux agrumes</p>
-                    </div>
-                    <div class="menu-plats-prix"><span>44€</span></div>
-                    <div class="menu-plats-validation">
-                        <div class="logo-validation">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="menu-1">
                 <h2>DESSERTS</h2>
-                <div class="menu-plats">
-                    <div class="menu-plats-txt">
-                        <h3>Paris-Brest</h3>
-                        <p>Revisité</p>
+                <div class="menu-1">
+                    <div class="menu-plats-one">
+                        <div class="menu-plats-txt">
+                            <h3>Macaron noisette et chocolat</h3>
+                            <p>Glace au caramel brun et sel de Guérande</p>
+                        </div>
+                        <div class="menu-plats-prix"><span>18€</span></div>
+                        <div class="menu-plats-validation">
+                            <div class="logo-validation">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="menu-plats-prix"><span>18€</span></div>
-                    <div class="menu-plats-validation">
-                        <div class="logo-validation">
-                            <i class="fa-solid fa-check"></i>
+                    <div class="menu-plats-two">
+                        <div class="menu-plats-txt">
+                            <h3>Baba au rhum revisité</h3>
+                            <p>Avec son coulis de citron</p>
+                        </div>
+                        <div class="menu-plats-prix"><span>22€</span></div>
+                        <div class="menu-plats-validation">
+                            <div class="logo-validation">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-plats-three">
+                        <div class="menu-plats-txt">
+                            <h3>Tarte au citron meringuée</h3>
+                            <p>Destructurée</p>
+                        </div>
+                        <div class="menu-plats-prix"><span>23€</span></div>
+                        <div class="menu-plats-validation">
+                            <div class="logo-validation">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="menu-plats">
-                    <div class="menu-plats-txt">
-                        <h3>Macaron au chocolat d'exception</h3>
-                        <p>Et glace à la vanille de Madagascar</p>
-                    </div>
-                    <div class="menu-plats-prix"><span>22€</span></div>
-                    <div class="menu-plats-validation">
-                        <div class="logo-validation">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-plats">
-                    <div class="menu-plats-txt">
-                        <h3>Mousse au chocolat</h3>
-                        <p>Au piment d'espelette et à la truffe noire</p>
-                    </div>
-                    <div class="menu-plats-prix"><span>23€</span></div>
-                    <div class="menu-plats-validation">
-                        <div class="logo-validation">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <div class="commander">
                 <a href="#">Commander</a>
             </div>
         </div>
 
-        
+
     </section>
 
 

@@ -1,44 +1,34 @@
 @media screen and (min-width:1192px) {
+
+    .menu-img {
+        max-height: 600px
+    }
+
     .groupe-menus {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        @include flexcol;
     }
 
     .menu-1 {
-        width: 45%;
-        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 40px;
     }
 
     .menu-plats-one, .menu-plats-two, .menu-plats-three, .menu-plats-four {
-        height: 200px;
+        margin: 0 10px;
+        width: 30%;
     }
 
     .menu-plats-txt {
-        width: 50%;
+        flex: 1;
         @include flexcol;
-
-        h3 {
-            font-size: 30px;
-            white-space: inherit;
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-        }
-
-        p {
-            font-size: 20px;
-            white-space: inherit;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
     }
 
     .menu-plats-prix {
-        width: 50%;
+        width: 50px;
         margin-left: 10px;
         span {
-            font-size: 30px;
             bottom: 50px;
         }
     }

@@ -60,6 +60,7 @@ body {
     @include centrehv;
     position: relative;
 
+
     a {
         position: absolute;
         left: 50px;
@@ -111,6 +112,7 @@ body {
     font-size: $sizetitre;
 
     &-heart {
+        width: 30px;
         position: relative;
 
         i {
@@ -127,7 +129,7 @@ body {
         }
     }
 
-    .fa-solid {
+    .icone-coeur {
         background-image: linear-gradient(to top,
                 rgba(255, 255, 255, 0.8631827731092436) 20%,
                 rgba(255, 255, 255, 1) 100%);
@@ -142,12 +144,6 @@ body {
 
 .groupe-menus {
     min-width: 200px;
-}
-
-.menu-1 {
-    margin: 50px 0 90px 0;
-    @include flexcol;
-
     h2 {
         position: relative;
         font-size: 20px;
@@ -164,6 +160,11 @@ body {
             background-color: $colortert;
         }
     }
+}
+
+.menu-1 {
+    @include flexcol;   
+    margin-bottom: 40px
 }
 
 .menu-plats-one {
@@ -185,6 +186,15 @@ body {
 }
 
 .menu-plats-three {
+    @include menus-plats;
+    @include animation-three;
+
+    &:hover {
+        @include menu-plats-hover;
+    }
+}
+
+.menu-plats-four {
     @include menus-plats;
     @include animation-three;
 
@@ -242,7 +252,7 @@ body {
     overflow: hidden;
 
     i {
-        padding: 10px;
+        padding: 5px;
         border-radius: 50%;
         background-color: $colorwhite;
         color: $colortert;
