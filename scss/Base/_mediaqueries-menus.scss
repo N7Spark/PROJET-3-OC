@@ -1,7 +1,32 @@
+
+@media screen and (min-width:768px) {
+
+    //-----------------FOOTER
+
+    footer {  
+        @include flexcol;
+        @include centrehv;
+        h3 {
+            padding: 10px;
+        }
+    }
+    .footer-txt {
+        @include centrehv;
+        margin: 0;
+    }
+
+}
+
+
 @media screen and (min-width:1192px) {
 
     .menu-img {
         max-height: 600px
+    }
+
+    .all-menus-titre-heart {
+        margin-right: 100px;
+        font-size: 35px;
     }
 
     .groupe-menus {
@@ -38,4 +63,5 @@
         border-radius: 25px;
         margin-top: 100px;
     }
+    
 }

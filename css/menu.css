@@ -231,6 +231,9 @@ body {
   margin-bottom: 50px;
   font-size: 27px;
 }
+.all-menus-titre h2 {
+  font-family: "Shrikhand", cursive;
+}
 .all-menus-titre-heart {
   width: 30px;
   position: relative;
@@ -422,8 +425,7 @@ body {
   border-radius: 50px;
   text-decoration: none;
   color: white;
-  background: rgb(181, 0, 196);
-  background: linear-gradient(0deg, rgba(147, 86, 220, 0.8631827731) 20%, rgb(255, 121, 218) 100%);
+  background: linear-gradient(0deg, rgb(147, 86, 220) 20%, rgb(255, 121, 218) 100%);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   opacity: 1;
   transition: all 0.2s ease-in-out;
@@ -695,9 +697,29 @@ footer a {
     z-index: 1000;
   }
 }
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer h3 {
+    padding: 10px;
+  }
+  .footer-txt {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
 @media screen and (min-width: 1192px) {
   .menu-img {
     max-height: 600px;
+  }
+  .all-menus-titre-heart {
+    margin-right: 100px;
+    font-size: 35px;
   }
   .groupe-menus {
     display: flex;
