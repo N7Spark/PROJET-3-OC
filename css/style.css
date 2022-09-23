@@ -134,9 +134,278 @@ h1 {
   font-size: 30px;
 }
 
+@-webkit-keyframes ouverture-plats-one {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes ouverture-plats-one {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes ouverture-plats-two {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes ouverture-plats-two {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes ouverture-plats-three {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  85% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes ouverture-plats-three {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  85% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes ouverture-plats-four {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes ouverture-plats-four {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotation-loading {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  20% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(720deg);
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(720deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(720deg);
+  }
+}
+@keyframes rotation-loading {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  20% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(720deg);
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(720deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(720deg);
+  }
+}
+@-webkit-keyframes disparition {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  50% {
+    opacity: 1;
+    z-index: 100;
+  }
+  75% {
+    opacity: 1;
+    z-index: 100;
+  }
+  100% {
+    opacity: 0;
+    z-index: 100;
+  }
+}
+@keyframes disparition {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  50% {
+    opacity: 1;
+    z-index: 100;
+  }
+  75% {
+    opacity: 1;
+    z-index: 100;
+  }
+  100% {
+    opacity: 0;
+    z-index: 100;
+  }
+}
+@-webkit-keyframes index {
+  0% {
+    z-index: 1000;
+  }
+  100% {
+    z-index: 1000;
+  }
+}
+@keyframes index {
+  0% {
+    z-index: 1000;
+  }
+  100% {
+    z-index: 1000;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   border-radius: 25px;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  background: #99E2D0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: disparition 2s ease-in-out 0s 1;
+          animation: disparition 2s ease-in-out 0s 1;
+}
+
+.ring {
+  position: absolute;
+  z-index: -500;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: index 2s ease 0s 1;
+          animation: index 2s ease 0s 1;
+}
+
+.ring-txt {
+  width: 280px;
+  height: 280px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Shrikhand", cursive;
+  line-height: 1.5;
+  font-size: 25px;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: rotation-loading 2s ease-in-out 0s 1;
+          animation: rotation-loading 2s ease-in-out 0s 1;
 }
 
 .header {
@@ -160,6 +429,7 @@ body {
   padding: 23px 30px 23px 23px;
   background-color: #f1f1f1;
   position: relative;
+  box-sizing: border-box;
 }
 .header__localisation:after {
   content: " ";
@@ -175,6 +445,38 @@ body {
   margin: 0;
   font-weight: bold;
   font-size: 15px;
+}
+
+.localisation-ville {
+  max-width: 110px;
+  background: none;
+  border: none;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+.localisation-ville::-moz-placeholder {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.localisation-ville:-ms-input-placeholder {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.localisation-ville::placeholder {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.localisation-ville:focus, .localisation-ville:focus-visible {
+  outline: none;
 }
 
 .presentation__full {
@@ -205,8 +507,8 @@ body {
 }
 .presentation a {
   text-align: center;
-  margin: 30px 0;
-  padding: 30px 40px;
+  margin: 20px 0;
+  padding: 20px 30px;
   border-radius: 50px;
   text-decoration: none;
   color: white;
@@ -239,7 +541,7 @@ body {
   width: 70%;
   margin: 20px 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #f1f1f1;
   text-decoration: none;
@@ -317,8 +619,8 @@ body {
 
 .nouveau {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 20px;
+  right: 20px;
   padding: 10px 20px;
   display: flex;
   justify-content: center;
@@ -333,7 +635,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 40px;
+  margin: 26px;
 }
 
 .cards-txt {
@@ -341,8 +643,9 @@ body {
   flex-direction: column;
 }
 .cards-txt h3 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .p-cards {

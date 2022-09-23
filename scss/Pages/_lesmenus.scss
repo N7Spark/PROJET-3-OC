@@ -4,50 +4,6 @@ body {
 }
 
 
-//---------LOADER
-
-.loader {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -100;
-    background: $colortert;
-    opacity: 0;
-    @include flexcol;
-    @include centrehv;
-    animation: disparition 2s ease-in-out 0s 1;
-}
-
-.ring {
-    position: absolute;
-    z-index: -500;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    animation: index 2s ease 0s 1 ;
-}
-
-.ring-txt {
-    width: 280px;
-    height: 280px;
-    margin: auto;
-    display: flex;
-    @include centrehv;
-    color: white;
-    font-family: "Shrikhand", cursive;
-    line-height: 1.5;
-    font-size: 25px;
-    border-left: 10px solid white;
-    border-right: 10px solid white;
-    border-radius: 50%;
-    opacity: 0;
-    animation: rotation-loading 2s ease-in-out 0s 1;
-
-}
-
-
-
-
 
 
 
@@ -85,12 +41,13 @@ body {
 
 .menu-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-
+    height: 400px;
+    
     img {
         width: 100%;
-        height: 100%
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
@@ -99,19 +56,20 @@ body {
 }
 
 .all-menus {
-    padding: 40px;
+    
     background-color: $colorgrey;
     border-radius: 40px 40px 0 0;
     margin-top: -40px;
 }
 
 .all-menus-titre {
+    padding: 40px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
     font-size: $sizetitre;
 
     h2 {    
+        font-size: 30px;
         font-family: 'Shrikhand', cursive;
     }
 
@@ -147,7 +105,7 @@ body {
 
 
 .groupe-menus {
-    min-width: 200px;
+    padding: 0 20px;
     h2 {
         position: relative;
         font-size: 20px;
@@ -275,7 +233,7 @@ body {
     a {
         text-align: center;
         margin-bottom: 90px;
-        padding: 25px 100px;
+        padding: 25px 50px;
         border-radius: 50px;
         text-decoration: none;
         color: $colorwhite;

@@ -4,6 +4,48 @@ body {
     border-radius: 25px;
 }
 
+
+//---------LOADER
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+    background: $colortert;
+    opacity: 0;
+    @include flexcol;
+    @include centrehv;
+    animation: disparition 2s ease-in-out 0s 1;
+}
+
+.ring {
+    position: absolute;
+    z-index: -500;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: index 2s ease 0s 1 ;
+}
+
+.ring-txt {
+    width: 280px;
+    height: 280px;
+    margin: auto;
+    display: flex;
+    @include centrehv;
+    color: white;
+    font-family: "Shrikhand", cursive;
+    line-height: 1.5;
+    font-size: 25px;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: rotation-loading 2s ease-in-out 0s 1;
+
+}
+
 //---------HEADER
 
 .header {
@@ -25,6 +67,7 @@ body {
     padding: 23px 30px 23px 23px;
     background-color: $colorgrey;
     position: relative;
+    box-sizing: border-box;
 
     &:after {
         content: " ";
@@ -41,6 +84,26 @@ body {
         margin: 0;
         font-weight: bold;
         font-size: $sizeparagraphe;
+    }
+}
+
+.localisation-ville {
+    max-width: 110px;
+    background: none;
+    border: none;
+    color: #000;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 15px;
+    &::placeholder {
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &:focus, &:focus-visible {
+        outline: none;
     }
 }
 
@@ -74,20 +137,18 @@ body {
 
     a {
         text-align: center;
-        margin: 30px 0;
-        padding: 30px 40px;
+        margin: 20px 0;
+        padding: 20px 30px;
         border-radius: 50px;
         text-decoration: none;
         color: $colorwhite;
         background: linear-gradient(0deg, rgba(147, 86, 220, 1) 20%, rgba(255, 121, 218, 1) 100%);
         box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.3);
-        // transition: all 2s ease-in-out;
         opacity: 1;
         transition: all 0.2s ease-in-out;
        
 
         &:hover {
-            // background: linear-gradient(0deg, rgba(147, 86, 220, 0.631827731092436, ) 20%, rgba(255, 121, 218, 0.8) 100%, );
             opacity: 0.8;
             box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.5);
         }
@@ -118,7 +179,8 @@ body {
         width: 70%;
         margin: 20px 0;
         display: flex;
-        @include centrehv;
+        justify-content: flex-start;
+        align-items: center;
         background-color: $colorgrey;
         text-decoration: none;
         color: #000;
@@ -207,8 +269,8 @@ body {
 
 .nouveau {
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 20px;
+    right: 20px;
     padding: 10px 20px;
     display: flex;
     @include centrehv;
@@ -222,15 +284,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 40px;
+    margin: 26px;
 }
 
 .cards-txt {
     @include flexcol;
 
     h3 {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-weight: bold;
+        font-size: 20px;
     }
 }
 
@@ -311,7 +374,4 @@ footer a {
 
 
 
-
-// mailto ne fonctionne pas sur CHROME
-// le médiaquerie sur les images des menus ne marche pas, l'image s'étire sur firefox
-// quand j'ouvre le site via github et non live server, certaines propriétées css ne s'appliquent pas (ex: image menu a la francaise n'apparait pas, les mediaqueries sur le footers ne fonctionne pas
+// loader spinner sur page d'accueil

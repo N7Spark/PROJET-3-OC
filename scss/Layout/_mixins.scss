@@ -28,17 +28,17 @@
 }
 
 @mixin animation_one {
-    animation: ouverture-plats-one 2.2s ease-in-out 1s 1;
+    animation: ouverture-plats-one 1s 1;
 }
 
 @mixin animation_two {
-    animation: ouverture-plats-two 2.6s ease-in-out 1s 1;
+    animation: ouverture-plats-two 1.5s 1;
 }
 
 @mixin animation_three {
-    animation: ouverture-plats-three 3s ease-in-out 1s 1;
+    animation: ouverture-plats-three 2s 1;
 }
 
 @mixin animation_four {
-    animation: ouverture-plats-four 3.4s ease-in-out 1s 1;
+    animation: ouverture-plats-four 1.6s 1;
 }
